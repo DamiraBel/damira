@@ -1,0 +1,380 @@
+body{
+    background-color: #9ddde3;
+    padding: 0;
+    margin: 0px;
+    font-family: "Abril Fatface"
+}
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    padding:0;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+    margin:auto;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #333333;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background: #333333(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+header {
+   display: flex;
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    text-align:70px;
+}
+.hd{
+    display: inline-block;
+    justify-content: center;
+}
+#hero{
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    height: 100vh;
+    align-items: center;
+}
+.me{
+    width: 50%;
+}
+.text{
+    font-size: 55px;
+    color: #338B94;
+    font-family: "Abril Fatface"
+}
+.text0{
+    font-size: 35px;
+    color: #338B94;
+    font-family: "Abril Fatface" 
+}
+img{
+    width: 80%;
+    height: 50%;
+}
+.decoration{
+    display: flex
+    ;
+    align-items: end;
+    justify-content: center; 
+    margin-top: -76px;
+    background-color: #333333;
+    width:100%;
+    height: 30px;
+}
+#about{
+    margin-top: -250px;
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    height: 1000px;
+    align-items: center;
+}
+.text2{
+text-align: center;
+    font-size: 70px;
+    color: #338B94;
+    font-family: "Abril Fatface"
+}
+
+.file{
+
+}
+.file1{
+    float: left;
+    width:80%;
+    height:50%;
+
+}
+.myself{
+    margin-top: 150px;
+    font-size: 25px;
+    color: #338B94;
+    text-align: left;
+    justify-content: flex;
+}
+#skill{
+    margin-top: -250px;
+    display: inline-block;
+    justify-content: center; 
+    text-align: center; 
+    height: 100vh;
+    align-items: center;
+}
+.text3{
+    text-align: center;
+    font-size: 70px;
+    color: #338B94;
+    font-family: "Abril Fatface"
+}
+.file3{
+    margin-top: -100px;
+    display:flex;
+    justify-content: flex;
+    font-size: 45px;
+    color: #338B94;
+    text-align: left;
+}
+.pr{
+    margin-top: -100px;
+    display:flex;
+    justify-content: flex;
+    font-size: 45px;
+    color: #338B94;
+    text-align: left;
+    width:50%;
+}
+.file4{
+    margin-top: -50px;
+    display:flex;
+    justify-content: flex;
+    font-size: 45px;
+    color: #338B94;
+    text-align: left;
+}
+.file5{
+    margin-top: -50px;
+    display:flex;
+    justify-content: flex;
+    font-size: 45px;
+    color: #338B94;
+    text-align: left;
+}
+.text4{
+    margin-top: -200px;
+    text-align: left;
+    font-size: 70px;
+    color: #338B94;
+    font-family: "Abril Fatface"
+}
+.file7{
+    padding-left: 100px;
+    font-size: 45px;
+    color: #338B94;
+    text-align: left;
+}
+.text5{
+    margin-top: 0px;
+    text-align: left;
+    font-size: 70px;
+    color: #338B94;
+    font-family: "Abril Fatface"
+}
+.pic{
+    float:right;
+    padding-right: 100px;
+    width: 500px;
+    height: 500px;
+    margin-top:-60px;
+}
+.file8{
+    margin-top: 400px;
+    padding-right: 100px;
+    font-size: 45px;
+    color: #338B94;
+    text-align:right;
+}
+.pic1{
+    float:left;
+    padding-left: 100px;
+    width: 500px;
+    height: 500px;
+    margin-top:-60px; 
+}
+.file9{
+    margin-top: 400px;
+    padding-left: 100px;
+    font-size: 45px;
+    color: #338B94;
+    text-align:left;
+}
+.sort{
+    color: #338B94;
+    font-size: 100px;
+}
+.pic2{
+    float:right;
+    padding-right: 100px;
+    width: 500px;
+    height: 500px;
+    margin-top:-60px; 
+}
+.file10{
+    margin-top: 300px;
+    font-size: 45px;
+    color: #338B94;
+    text-align:center;
+}
+.all{
+     /* box-shadow:0 0 10px 10px #244985;*/
+}
+.text6{
+    margin-top: -150px;
+    text-align: center;
+    font-size: 70px;
+    color: #338B94;
+    font-family: "Abril Fatface"
+}
+.file11{
+margin: 100px;
+    padding: 100px;
+    font-size: 45px;
+    color: #338B94;
+    text-align:center;
+}
+#contact{
+
+}
+input{
+    margin: 20px;
+    padding: 15px 30px;
+    width: 1000px;
+    border-radius: 50px;
+    font-size: 40px;
+   }
+
+.send{
+    margin-top: 60px;
+    justify-content: center;
+}
+a{
+    color:#338B94;
+    text-decoration: none;
+    padding-left: 9px ; 
+    background-image: radial-gradient(#115960 2px, transparent 0);  
+    border-radius: 1000px;
+}
+a:hover{
+    color: #115960;
+    background-image: radial-gradient (#115960 2px, transparent 0);
+    transition: 0.3s;
+}
+/*.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #8d9ae0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot1 {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+*/
+.cd{
+    width:5%;
+    height:5%;
+    margin: 0px;
+    justify-content: center;
+    animation: 50s example infinite; 
+    animation-timing-function: linear;
+}
+@keyframes example{
+    0% {       
+  transform: rotate(0deg);
+  border-radius: 50%;
+  } 
+    50%  {
+  transform: rotate(360deg);
+  border-radius: 50%;
+  } 
+    100% {
+   transform: rotate(720deg);
+   border-radius: 50%;
+  }
+}
+
+nav {
+    margin;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav li {
+    color: white;
+    display: inline-block;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
